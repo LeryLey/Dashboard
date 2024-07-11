@@ -14,6 +14,8 @@ import Finances from "/src/pages/Finances";
 import Settings from "/src/pages/Settings";
 import AddProduct from "./AddProduct";
 import Customer from "../pages/Customer";
+import AddCustomer from "./AddCustomer";
+import EditCustomer from "./EditCustomer";
 const RouterApp = () => {
   return (
     <div className="flex w-full">
@@ -29,8 +31,10 @@ const RouterApp = () => {
           <Route path="/add-product" element={<AddProduct />} />
           <Route path="/setting" element={<Settings />} />
           <Route path="/customer" element={<Customer />} />
+          <Route path="/add-customer" element={<AddCustomer />} />
+          <Route path="/edit-customer" element={<EditCustomer />} />
         </Routes>
-      </div>
+      </div>  
     </div>
   );
 };

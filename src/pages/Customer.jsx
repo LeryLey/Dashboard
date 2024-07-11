@@ -88,7 +88,7 @@ const Customer = () => {
                 <ion-icon name="chevron-down-outline"></ion-icon>
               </span>
             </button>
-            <Link to={"/add-product"}>
+            <Link to={"/add-customer"}>
               <button
                 type="button"
                 id="addProduct"
