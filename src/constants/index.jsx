@@ -52,13 +52,14 @@ export const links = [
   },
   {
     icon: (
-      <span className="bg-white/10 h-8 w-8 text-base flex rounded-full items-center justify-center text-white">
-        <ion-icon name="cog"></ion-icon>
+      <span className="bg-white/10 h-8 w-8 text-base flex rounded-full items-center justify-center text-yellow-500">
+        <ion-icon name="person"></ion-icon>
       </span>
     ),
-    title: "Settings",
-    path: "/setting",
+    title: "Customer",
+    path: "/customer",
   },
+
 ];
 export const items = [
   {

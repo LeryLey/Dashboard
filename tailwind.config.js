@@ -3,19 +3,19 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      'sm': '695px',
+      sm: "695px",
       // => @media (min-width: 640px) { ... }
 
-      'md': '980px',
+      md: "980px",
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1050px',
+      lg: "1050px",
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1226px',
+      xl: "1226px",
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px',
+      "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
     extend: {

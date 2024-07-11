@@ -13,6 +13,7 @@ import Stores from "/src/pages/Stores";
 import Finances from "/src/pages/Finances";
 import Settings from "/src/pages/Settings";
 import AddProduct from "./AddProduct";
+import Customer from "../pages/Customer";
 const RouterApp = () => {
   return (
     <div className="flex w-full">
@@ -26,6 +27,8 @@ const RouterApp = () => {
           <Route path="/finances" element={<Finances />} />
           <Route path="/setting" element={<Settings />} />
           <Route path="/add-product" element={<AddProduct />} />
+          <Route path="/setting" element={<Settings />} />
+          <Route path="/customer" element={<Customer />} />
         </Routes>
       </div>
     </div>

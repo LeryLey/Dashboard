@@ -14,7 +14,9 @@ const Navbar = () => {
           transition={{ duration: 1 }}
           className="flex items-center sm:space-x-16 space-x-6  "
         >
-          <h2 className="text-xl font-medium text-blue-600">OnlineShop.io</h2>
+          <h2 className="text-xl font-medium text-blue-600 mr-16">
+            OnlineShop.io
+          </h2>
           <form
             action="index.html"
             className="relative items-center text-gray-500 sm:flex hidden"
@@ -37,24 +39,34 @@ const Navbar = () => {
           transition={{ duration: 1 }}
           className="flex items-center space-x-4"
         >
-          {/* notification */}
-          <div
-            id="notification"
-            onClick={handle}
-            className="relative text-2xl text-white flex "
-          >
-            <ion-icon name="notifications-outline"></ion-icon>
+          <div className="flex">
+            {/* mail  */}
+            <button className="text-xl text-white flex hover:bg-white/10 p-2 rounded-full ">
+              <ion-icon name="mail-unread"></ion-icon>
+            </button>
+            {/* setting  */}
+            <button className="text-xl text-white flex hover:bg-white/10 p-2 rounded-full ">
+              <ion-icon name="cog"></ion-icon>
+            </button>
+            {/* notification */}
             <div
-              id="ms"
-              className={
-                !ms
-                  ? "absolute w-40 bg-blue-600 right-0 top-10 rounded-md flex items-center justify-center p-2 opacity-0 duration-300 z-10"
-                  : "absolute w-40 bg-blue-600 right-0 top-10 rounded-md flex items-center justify-center p-2 opacity-[1] duration-300 z-10"
-              }
+              id="notification"
+              onClick={handle}
+              className="relative text-xl text-white flex hover:bg-white/10 p-2 rounded-full "
             >
-              <span className="text-sm text-gray-300 select-none ">
-                No Notifications
-              </span>
+              <ion-icon name="notifications"></ion-icon>
+              <div
+                id="ms"
+                className={
+                  !ms
+                    ? "absolute w-40 bg-blue-600 right-0 top-10 rounded-md flex items-center justify-center p-2 opacity-0 duration-300 z-10"
+                    : "absolute w-40 bg-blue-600 right-0 top-10 rounded-md flex items-center justify-center p-2 opacity-[1] duration-300 z-10"
+                }
+              >
+                <span className="text-sm text-gray-300 select-none ">
+                  No Notifications
+                </span>
+              </div>
             </div>
           </div>
           {/* profile  */}
